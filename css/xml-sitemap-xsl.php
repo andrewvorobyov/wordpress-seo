@@ -13,6 +13,7 @@ if ( ! defined( 'WPSEO_VERSION' ) ) {
 // to deal with support requests for other people's wrong code...
 if ( extension_loaded( 'newrelic' ) && function_exists( 'newrelic_disable_autorum' ) ) {
 	newrelic_disable_autorum();
+	newrelic_ignore_transaction();
 }
 
 // Echo so opening tag doesn't get confused for PHP. R.
